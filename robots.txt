@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /private/
+Allow: /  
+
+Sitemap: https://parezlaboratories.com/sitemap.xml
