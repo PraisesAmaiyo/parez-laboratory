@@ -215,10 +215,11 @@
       </section>
 
 
-      <section class="section-footer" id="about">
+      <section class="section-footer" id="footer">
 
          <div class="footer-container">
-            <h2 class="about-subtext mt-1"><strong> Copyright &#169; Parez Laboratories | 2025</strong></h2>
+            <h2 class="about-subtext mt-1"><strong> &copy; <span id="year"></span> Parez Laboratories. All rights
+                  reserved.</strong></h2>
 
             <div class="footer-bottom-section">
                <!-- <h2 class="footer-subHeader">
@@ -246,4 +247,11 @@
 
 </html>
 
-</html>
+// Copyright Year
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      const yearSpan = document.getElementById("year");
+      const currentYear = new Date().getFullYear();
+      yearSpan.textContent = currentYear;
+   });
+</script>
